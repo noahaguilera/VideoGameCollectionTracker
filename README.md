@@ -22,4 +22,4 @@ Some features I would like to add is to auto import your xbox, steam, and playst
 ### Examples of documentation of progress, reflections, and time spent on this class
 
 #### [Journal](journal.md)
-#### [TimeLog](timeLog.md)
+#### [TimeLog](timelog.md)
