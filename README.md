@@ -17,7 +17,7 @@ Some features I would like to add is to auto import your xbox, steam, and playst
 
 
 
-### Project Plan
+### [Project Plan](ProjectPlan.md)
 
 ### Examples of documentation of progress, reflections, and time spent on this class
 
