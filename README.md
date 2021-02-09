@@ -14,7 +14,8 @@ Some features I would like to add is to auto import your xbox, steam, and playst
 
 
 ### Design
-
+* [User Stories](DesignDocuments/UserStories.md)
+* [Screen Design](DesignDocuments/ScreenDesign.md)
 
 
 ### [Project Plan](ProjectPlan.md)
