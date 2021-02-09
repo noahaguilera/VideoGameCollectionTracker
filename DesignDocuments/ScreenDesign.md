@@ -2,38 +2,38 @@
 
 ### Home Page When Not Logged In
 
-![Home Page Not Logged In](wireframes/home.png)
+![Home Page Not Logged In](wireframes/home.PNG)
 
 ### Home Page When Logged In
 
-![Home Page Logged In](wireframes/homesignedin.png)
+![Home Page Logged In](wireframes/homesignedin.PNG)
 
 ### Add Game
 
-![Add Game](wireframes/addgame.png)
+![Add Game](wireframes/addgame.PNG)
 
 ### Add Game Manually
 
-![Add Game Manually](wireframes/addgamemanually.png)
+![Add Game Manually](wireframes/addgamemanually.PNG)
 
 ### View Your Games
 
-![View Your Games](wireframes/mygames.png)
+![View Your Games](wireframes/mygames.PNG)
 
 ### Your Profile
 
-![View Your Profile](wireframes/myprofile.png)
+![View Your Profile](wireframes/myprofile.PNG)
 
 ### Edit Your Profile
 
-![Edit Your Profile](wireframes/editprofile.png)
+![Edit Your Profile](wireframes/editprofile.PNG)
 
 ### Login
 
-![Login](wireframes/login.png)
+![Login](wireframes/login.PNG)
 
 ### Signup
 
-![Signup](wireframes/signup.png)
+![Signup](wireframes/signup.PNG)
 
 
