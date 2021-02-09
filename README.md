@@ -3,12 +3,9 @@
 
 ### Problem Statement
 
-In recent years I've had trouble keeping track of all my games, which to me isn't a big surprise, because on the Xbox alone I have as of writing this 775 games, so across all of my systems through the years I have well over a thousand games. So keeping track of that many from memory would be almost impossible. 
+Since the creation of video games in the early 70s there have been hundreds of game systems and over a million games created for them. So keeping track of all your games is becoming harder and harder as more systems and games come out daily. Some newer systems released let you keep track of all your digitally owned games but its a lot harder to keep track of your physically owned discs.
 
-So My solution to that would be to build a site to record your entire collection of games and specify if you own them digitally or physically and where they're currently located if they're in your house or in a storage locker for example.
-
-Some features I would like to add is to auto import your xbox, steam, and playstation games so you don't have to do all the work of entering in the game info yourself. Also in the light I want to try and implement a barcode scanner so it can be easier to add games you have the box for. 
-
+So my solution to the problem is to have a site that you can enter in all your games for all your systems. What sets my site apart from the many of other video game collection sites is that mine will have the option to choose if you own the game physically or digitially which many of the sites don't have. Another thing is the amount of ways you can add a game to your collection, as a mvp I want the user to be able to search the game up or be able to enter it manually, but I would like to take it a step further by allowing the user to enter their platform info and have their games list auto imported into the collection.
 ### Project Technologies/Techniques
 
 
