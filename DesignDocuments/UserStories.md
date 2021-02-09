@@ -32,6 +32,10 @@ As a user I want to be able to edit my profile to choose an Image that suits me 
 
 ##NOT MVP
 
+### Import games list
+
+As a user I want to have the option to get my games list auto imported from my gaming platform instead of having to add them all myself.
+
 ### Verify New Games Added
 
 As an admin I want to have the ability to moderate the games being manually added to make sure they're real games.
