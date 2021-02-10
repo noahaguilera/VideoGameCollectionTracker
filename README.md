@@ -13,6 +13,7 @@ So my solution to the problem is to have a site that you can enter in all your g
 ### Design
 * [User Stories](DesignDocuments/UserStories.md)
 * [Screen Design](DesignDocuments/ScreenDesign.md)
+* [Application Flow](DesignDocuments/ApplicationFlow.md)
 
 
 ### [Project Plan](ProjectPlan.md)
