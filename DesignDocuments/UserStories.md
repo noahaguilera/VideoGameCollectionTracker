@@ -22,6 +22,14 @@ As a user I want to be able to add a game to my collection with ease by just sea
 
 As a user I want to have the ability to add a game manually to my collection if it isn't in the searched games.
 
+### Edit Game
+
+As a user I want to be able to edit the games in my collection by clicking an edit button.
+
+### Delete Game
+
+As a user I want to be able delete a game from my collection with a simple click, if I don't own it anymore in real life.
+
 ### View Profile
 
 As a user I want to be able to view my profile and get some more stats about my game collection.
