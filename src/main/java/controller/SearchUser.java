@@ -22,10 +22,13 @@ import java.io.IOException;
 public class SearchUser extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        //UserData userData = new UserData();
+        String output = req.getParameter("userNameInput");
         UserDao userDao = new UserDao();
-        req.setAttribute("users", userDao.getAll());
+        if (req.getParameter("search") != null) {
+            req.setAttribute("users", userDao.getByPropertyLike("userName", output));
+        } else if (req.getParameter("all") != null) {
+            req.setAttribute("users", userDao.getAll());
+        }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users.jsp");
         dispatcher.forward(req, resp);
     }

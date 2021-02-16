@@ -114,7 +114,7 @@ public class UserDao {
         Root<User> root = query.from( User.class );
         Expression<String> propertyPath = root.get(propertyName);
 
-        query.where(builder.like(propertyPath, "%" + value + "%"));
+        query.where(builder.like(propertyPath, value + "%"));
 
         List<User> users = session.createQuery( query ).getResultList();
         session.close();
