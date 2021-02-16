@@ -1,5 +1,6 @@
 package controller;
 
+import entity.User;
 import persistence.UserDao;
 
 import javax.servlet.RequestDispatcher;
@@ -22,12 +23,17 @@ import java.io.IOException;
 public class SearchUser extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String output = req.getParameter("userNameInput");
+        String userName = req.getParameter("userNameInput");
+        String email = req.getParameter("emailInput");
+        String password = req.getParameter("passwordInput");
         UserDao userDao = new UserDao();
         if (req.getParameter("search") != null) {
-            req.setAttribute("users", userDao.getByPropertyLike("userName", output));
+            req.setAttribute("users", userDao.getByPropertyLike("userName", userName));
         } else if (req.getParameter("all") != null) {
             req.setAttribute("users", userDao.getAll());
+        } else if (req.getParameter("signup") != null) {
+            User newUser = new User(userName, email, password,0,  0);
+            req.setAttribute("users", userDao.insert(newUser));
         }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users.jsp");
         dispatcher.forward(req, resp);

@@ -7,5 +7,7 @@
     <input type="submit" name="search" value="Search" />
     <input type="submit" name="all" value="Show All Users" />
 </form>
+<br/>
+<a href="signup.jsp">Sign Up</a>
 </body>
 </html>

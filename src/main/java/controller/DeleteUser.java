@@ -17,19 +17,16 @@ import java.io.IOException;
  */
 
 @WebServlet(
-        urlPatterns = {"/addUser"}
+        urlPatterns = {"/deleteUser"}
 )
 
-public class AddUser extends HttpServlet {
+public class DeleteUser extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UserDao userDao = new UserDao();
-        String userName = req.getParameter("userNameInput");
-        String email = req.getParameter("emailInput");
-        String password = req.getParameter("passwordInput");
-        User newUser = new User(userName, email, password,0,  0);
-        req.setAttribute("users", userDao.insert(newUser));
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/added.jsp");
+        int id = Integer.parseInt(req.getParameter("trashcan"));
+        userDao.delete(userDao.getById(id));
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/deleted.jsp");
         dispatcher.forward(req, resp);
     }
 }

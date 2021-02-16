@@ -22,6 +22,15 @@
                 <td>${user.email}</td>
                 <td>${user.password}</td>
                 <td>${user.admin}</td>
+                <td>
+                    <form action="deleteUser" method="POST">
+                        <label>
+                            <input type="submit" class="trashcan" name="trashcan" value=${user.id} />
+                            <img src="images/trash.png" class="trashcanimg">
+                        </label>
+
+                    </form>
+                </td>
             </tr>
         </c:forEach>
 
