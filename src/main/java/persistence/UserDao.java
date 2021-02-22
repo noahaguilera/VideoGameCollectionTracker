@@ -38,8 +38,8 @@ public class UserDao {
     }
 
     /**
-     * update user
-     * @param user  User to be inserted or updated
+     * Insert user
+     * @param user  User to be inserted
      */
     public int insert(User user) {
         int id = 0;
