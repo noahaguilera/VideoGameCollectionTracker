@@ -22696,3 +22696,752 @@
 [DEBUG] 2021-02-21 21:30:29.218 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
 [DEBUG] 2021-02-21 21:30:29.218 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.User#3
 [DEBUG] 2021-02-21 21:30:29.218 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:16.844 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-02-22 04:36:16.852 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-02-22 04:36:16.859 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-02-22 04:36:16.966 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-02-22 04:36:16.968 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-02-22 04:36:17.222 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2021-02-22 04:36:17.224 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2021-02-22 04:36:17.233 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-02-22 04:36:17.638 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-02-22 04:36:17.662 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-02-22 04:36:17.663 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-02-22 04:36:17.684 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-02-22 04:36:17.728 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@51a6cc2a
+[DEBUG] 2021-02-22 04:36:17.728 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@51a6cc2a
+[DEBUG] 2021-02-22 04:36:17.729 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@51a6cc2a
+[DEBUG] 2021-02-22 04:36:17.729 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@28cb3a25
+[DEBUG] 2021-02-22 04:36:17.730 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@9aa2002
+[DEBUG] 2021-02-22 04:36:17.731 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@5a2fa51f
+[DEBUG] 2021-02-22 04:36:17.732 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@3c69362a
+[DEBUG] 2021-02-22 04:36:17.732 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@3c69362a
+[DEBUG] 2021-02-22 04:36:17.732 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3c69362a
+[DEBUG] 2021-02-22 04:36:17.733 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@7c251f90
+[DEBUG] 2021-02-22 04:36:17.733 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@7c251f90
+[DEBUG] 2021-02-22 04:36:17.734 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7c251f90
+[DEBUG] 2021-02-22 04:36:17.735 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e86a5a7
+[DEBUG] 2021-02-22 04:36:17.735 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1e86a5a7
+[DEBUG] 2021-02-22 04:36:17.735 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1e86a5a7
+[DEBUG] 2021-02-22 04:36:17.736 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@23a5818e
+[DEBUG] 2021-02-22 04:36:17.736 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@23a5818e
+[DEBUG] 2021-02-22 04:36:17.736 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@23a5818e
+[DEBUG] 2021-02-22 04:36:17.737 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6850b758
+[DEBUG] 2021-02-22 04:36:17.737 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6850b758
+[DEBUG] 2021-02-22 04:36:17.737 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6850b758
+[DEBUG] 2021-02-22 04:36:17.739 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@75961f16
+[DEBUG] 2021-02-22 04:36:17.740 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@75961f16
+[DEBUG] 2021-02-22 04:36:17.740 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@75961f16
+[DEBUG] 2021-02-22 04:36:17.741 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@24db6ce
+[DEBUG] 2021-02-22 04:36:17.741 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@24db6ce
+[DEBUG] 2021-02-22 04:36:17.742 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@24db6ce
+[DEBUG] 2021-02-22 04:36:17.743 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6a638c79
+[DEBUG] 2021-02-22 04:36:17.743 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6a638c79
+[DEBUG] 2021-02-22 04:36:17.744 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5b22d8a1
+[DEBUG] 2021-02-22 04:36:17.744 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5b22d8a1
+[DEBUG] 2021-02-22 04:36:17.745 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@68880c21
+[DEBUG] 2021-02-22 04:36:17.745 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@68880c21
+[DEBUG] 2021-02-22 04:36:17.746 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@47ffe971
+[DEBUG] 2021-02-22 04:36:17.747 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@339a3670
+[DEBUG] 2021-02-22 04:36:17.748 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@5d51e129
+[DEBUG] 2021-02-22 04:36:17.748 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@5d51e129
+[DEBUG] 2021-02-22 04:36:17.749 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@743e66f7
+[DEBUG] 2021-02-22 04:36:17.749 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@743e66f7
+[DEBUG] 2021-02-22 04:36:17.762 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@78cd163b
+[DEBUG] 2021-02-22 04:36:17.762 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@78cd163b
+[DEBUG] 2021-02-22 04:36:17.765 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1f11f64e
+[DEBUG] 2021-02-22 04:36:17.766 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1f11f64e
+[DEBUG] 2021-02-22 04:36:17.770 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@672b72ba
+[DEBUG] 2021-02-22 04:36:17.770 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@672b72ba
+[DEBUG] 2021-02-22 04:36:17.772 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@44bd4b0a
+[DEBUG] 2021-02-22 04:36:17.773 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@44bd4b0a
+[DEBUG] 2021-02-22 04:36:17.776 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2b8bb184
+[DEBUG] 2021-02-22 04:36:17.777 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2b8bb184
+[DEBUG] 2021-02-22 04:36:17.781 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1e0895f5
+[DEBUG] 2021-02-22 04:36:17.781 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1e0895f5
+[DEBUG] 2021-02-22 04:36:17.784 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@13d9261f
+[DEBUG] 2021-02-22 04:36:17.785 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@13d9261f
+[DEBUG] 2021-02-22 04:36:17.787 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@4c777e7b
+[DEBUG] 2021-02-22 04:36:17.787 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@4c777e7b
+[DEBUG] 2021-02-22 04:36:17.789 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@1deceb67
+[DEBUG] 2021-02-22 04:36:17.790 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1deceb67
+[DEBUG] 2021-02-22 04:36:17.793 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@6f49d153
+[DEBUG] 2021-02-22 04:36:17.793 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6f49d153
+[DEBUG] 2021-02-22 04:36:17.793 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6f49d153
+[DEBUG] 2021-02-22 04:36:17.795 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@62db3891
+[DEBUG] 2021-02-22 04:36:17.797 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@4674d90
+[DEBUG] 2021-02-22 04:36:17.797 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4674d90
+[DEBUG] 2021-02-22 04:36:17.798 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4674d90
+[DEBUG] 2021-02-22 04:36:17.800 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2a3194c6
+[DEBUG] 2021-02-22 04:36:17.801 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@1e469dfd
+[DEBUG] 2021-02-22 04:36:17.801 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1e469dfd
+[DEBUG] 2021-02-22 04:36:17.803 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@1907874b
+[DEBUG] 2021-02-22 04:36:17.803 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1907874b
+[DEBUG] 2021-02-22 04:36:17.804 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@767191b1
+[DEBUG] 2021-02-22 04:36:17.804 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@767191b1
+[DEBUG] 2021-02-22 04:36:17.805 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@fab35b1
+[DEBUG] 2021-02-22 04:36:17.805 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@fab35b1
+[DEBUG] 2021-02-22 04:36:17.805 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2f37f1f9
+[DEBUG] 2021-02-22 04:36:17.806 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2f37f1f9
+[DEBUG] 2021-02-22 04:36:17.806 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@48528634
+[DEBUG] 2021-02-22 04:36:17.808 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@7a0ef219
+[DEBUG] 2021-02-22 04:36:17.808 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@7a0ef219
+[DEBUG] 2021-02-22 04:36:17.808 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@7a0ef219
+[DEBUG] 2021-02-22 04:36:17.809 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@658255aa
+[DEBUG] 2021-02-22 04:36:17.809 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@658255aa
+[DEBUG] 2021-02-22 04:36:17.809 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@658255aa
+[DEBUG] 2021-02-22 04:36:17.810 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@1e58512c
+[DEBUG] 2021-02-22 04:36:17.811 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@7f353d99
+[DEBUG] 2021-02-22 04:36:17.812 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@1229a2b7
+[DEBUG] 2021-02-22 04:36:17.813 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@1229a2b7
+[DEBUG] 2021-02-22 04:36:17.813 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@1229a2b7
+[DEBUG] 2021-02-22 04:36:17.814 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@31ee2fdb
+[DEBUG] 2021-02-22 04:36:17.814 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@31ee2fdb
+[DEBUG] 2021-02-22 04:36:17.814 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@31ee2fdb
+[DEBUG] 2021-02-22 04:36:17.814 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@6920614
+[DEBUG] 2021-02-22 04:36:17.815 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@433348bc
+[DEBUG] 2021-02-22 04:36:17.816 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@4eba373c
+[DEBUG] 2021-02-22 04:36:17.817 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4eba373c
+[DEBUG] 2021-02-22 04:36:17.817 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@26f46fa6
+[DEBUG] 2021-02-22 04:36:17.817 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@60bbacfc
+[DEBUG] 2021-02-22 04:36:17.817 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@60bbacfc
+[DEBUG] 2021-02-22 04:36:17.819 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@a66e580
+[DEBUG] 2021-02-22 04:36:17.819 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@a66e580
+[DEBUG] 2021-02-22 04:36:17.820 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2f5ac102
+[DEBUG] 2021-02-22 04:36:17.820 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@80bfdc6
+[DEBUG] 2021-02-22 04:36:17.821 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@3804a9a8
+[DEBUG] 2021-02-22 04:36:17.826 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@1e7ab390
+[DEBUG] 2021-02-22 04:36:17.826 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1e7ab390
+[DEBUG] 2021-02-22 04:36:17.827 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6cd64ee8
+[DEBUG] 2021-02-22 04:36:17.827 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@620c8641
+[DEBUG] 2021-02-22 04:36:17.827 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2f1d0bbc
+[DEBUG] 2021-02-22 04:36:17.827 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5460b754
+[DEBUG] 2021-02-22 04:36:17.828 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@a9f023e
+[DEBUG] 2021-02-22 04:36:17.828 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@c27a3a2
+[DEBUG] 2021-02-22 04:36:17.828 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4b200971
+[DEBUG] 2021-02-22 04:36:17.828 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1a2bcd56
+[DEBUG] 2021-02-22 04:36:17.878 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-02-22 04:36:17.878 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-02-22 04:36:17.880 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-02-22 04:36:17.880 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-02-22 04:36:17.881 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-02-22 04:36:17.882 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-02-22 04:36:17.883 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-02-22 04:36:17.885 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-02-22 04:36:17.885 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-02-22 04:36:17.887 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-02-22 04:36:17.887 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-02-22 04:36:17.888 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-02-22 04:36:17.888 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-02-22 04:36:17.889 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-02-22 04:36:17.894 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_videogame
+[INFO ] 2021-02-22 04:36:17.894 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-02-22 04:36:17.895 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-02-22 04:36:18.013 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-02-22 04:36:18.157 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.23
+      major : 8
+      minor : 0
+[DEBUG] 2021-02-22 04:36:18.157 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.23 (Revision: 18bbd5e68195d0da083cbd5bd0d05d76320df7cd)
+      major : 8
+      minor : 0
+[DEBUG] 2021-02-22 04:36:18.157 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-02-22 04:36:18.191 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2021-02-22 04:36:18.212 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-02-22 04:36:18.252 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-02-22 04:36:18.283 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-02-22 04:36:18.286 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2b7e8044] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@550de6b8]
+[DEBUG] 2021-02-22 04:36:18.344 [main] AnnotationBinder - Binding entity from annotated class: entity.User
+[DEBUG] 2021-02-22 04:36:18.369 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-02-22 04:36:18.376 [main] EntityBinder - Import with entity name User
+[DEBUG] 2021-02-22 04:36:18.378 [main] EntityBinder - Bind entity entity.User on table user
+[DEBUG] 2021-02-22 04:36:18.400 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-22 04:36:18.402 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-02-22 04:36:18.404 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:id]
+[DEBUG] 2021-02-22 04:36:18.405 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-02-22 04:36:18.408 [main] PropertyBinder - Building property id
+[DEBUG] 2021-02-22 04:36:18.412 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-02-22 04:36:18.413 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=admin, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-22 04:36:18.413 [main] PropertyBinder - MetadataSourceProcessor property admin with lazy=false
+[DEBUG] 2021-02-22 04:36:18.413 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:admin]
+[DEBUG] 2021-02-22 04:36:18.413 [main] SimpleValueBinder - building SimpleValue for admin
+[DEBUG] 2021-02-22 04:36:18.413 [main] PropertyBinder - Building property admin
+[DEBUG] 2021-02-22 04:36:18.414 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-22 04:36:18.414 [main] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2021-02-22 04:36:18.414 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:email]
+[DEBUG] 2021-02-22 04:36:18.414 [main] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2021-02-22 04:36:18.414 [main] PropertyBinder - Building property email
+[DEBUG] 2021-02-22 04:36:18.414 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-22 04:36:18.414 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2021-02-22 04:36:18.414 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:password]
+[DEBUG] 2021-02-22 04:36:18.414 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2021-02-22 04:36:18.414 [main] PropertyBinder - Building property password
+[DEBUG] 2021-02-22 04:36:18.414 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-22 04:36:18.414 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2021-02-22 04:36:18.415 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:userName]
+[DEBUG] 2021-02-22 04:36:18.415 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2021-02-22 04:36:18.415 [main] PropertyBinder - Building property userName
+[DEBUG] 2021-02-22 04:36:18.417 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-02-22 04:36:18.417 [main] SimpleValueBinder - Starting fillSimpleValue for admin
+[DEBUG] 2021-02-22 04:36:18.417 [main] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2021-02-22 04:36:18.417 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2021-02-22 04:36:18.417 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2021-02-22 04:36:18.418 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2021-02-22 04:36:18.455 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2021-02-22 04:36:18.456 [main] Settings - SessionFactory name : null
+[DEBUG] 2021-02-22 04:36:18.456 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Statistics: disabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Default null ordering: NONE
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Query language substitutions: {}
+[DEBUG] 2021-02-22 04:36:18.457 [main] Settings - Named query checking : enabled
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - Second-level cache: disabled
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2021-02-22 04:36:18.458 [main] Settings - JDBC batch size: 15
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - JPA compliance - query : 
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2021-02-22 04:36:18.459 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2021-02-22 04:36:18.510 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2021-02-22 04:36:18.527 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2021-02-22 04:36:18.527 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=Cp1252, hibernate.c3p0.min_size=5, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\junit\lib\junit-rt.jar;C:\Users\Nohanderlin\IdeaProjects\VideoGameCollectionTracker\target\test-classes;C:\Users\Nohanderlin\IdeaProjects\VideoGameCollectionTracker\target\classes;C:\Users\Nohanderlin\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar;C:\Users\Nohanderlin\.m2\repository\mysql\mysql-connector-java\8.0.23\mysql-connector-java-8.0.23.jar;C:\Users\Nohanderlin\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\Nohanderlin\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\Nohanderlin\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar;C:\Users\Nohanderlin\.m2\repository\org\junit\platform\junit-platform-runner\1.0.0\junit-platform-runner-1.0.0.jar;C:\Users\Nohanderlin\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Nohanderlin\.m2\repository\org\junit\platform\junit-platform-launcher\1.0.0\junit-platform-launcher-1.0.0.jar;C:\Users\Nohanderlin\.m2\repository\org\junit\platform\junit-platform-suite-api\1.0.0\junit-platform-suite-api-1.0.0.jar;C:\Users\Nohanderlin\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0\junit-platform-commons-1.0.0.jar;C:\Users\Nohanderlin\.m2\repository\org\junit\vintage\junit-vintage-engine\4.12.0\junit-vintage-engine-4.12.0.jar;C:\Users\Nohanderlin\.m2\repository\org\junit\platform\junit-platform-engine\1.0.0\junit-platform-engine-1.0.0.jar;C:\Users\Nohanderlin\.m2\repository\org\opentest4j\opentest4j\1.0.0\opentest4j-1.0.0.jar;C:\Users\Nohanderlin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.0.0\junit-jupiter-engine-5.0.0.jar;C:\Users\Nohanderlin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0\junit-jupiter-api-5.0.0.jar;C:\Users\Nohanderlin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Nohanderlin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Nohanderlin\.m2\repository\org\hibernate\hibernate-core\5.4.4.Final\hibernate-core-5.4.4.Final.jar;C:\Users\Nohanderlin\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\Nohanderlin\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Nohanderlin\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\Nohanderlin\.m2\repository\net\bytebuddy\byte-buddy\1.9.11\byte-buddy-1.9.11.jar;C:\Users\Nohanderlin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Nohanderlin\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Nohanderlin\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\Nohanderlin\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\Nohanderlin\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Nohanderlin\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Nohanderlin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\Nohanderlin\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Nohanderlin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Nohanderlin\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Nohanderlin\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Nohanderlin\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Nohanderlin\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Nohanderlin\.m2\repository\org\hibernate\hibernate-c3p0\5.4.4.Final\hibernate-c3p0-5.4.4.Final.jar;C:\Users\Nohanderlin\.m2\repository\com\mchange\c3p0\0.9.5.3\c3p0-0.9.5.3.jar;C:\Users\Nohanderlin\.m2\repository\com\mchange\mchange-commons-java\0.2.15\mchange-commons-java-0.2.15.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, user.variant=, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.9\bin, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 persistence.UserDaoTest, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\Nohanderlin, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-10-20, java.home=C:\Program Files\Java\jdk-11.0.9, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, user.script=, connection.password=School50232, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.9+7-LTS, user.name=Nohanderlin, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_videogame, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\NOHAND~1\AppData\Local\Temp\, java.version=11.0.9, user.dir=C:\Users\Nohanderlin\IdeaProjects\VideoGameCollectionTracker, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@2574a9e3, java.library.path=C:\Program Files\Java\jdk-11.0.9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_241\bin;D:\Softwares\apache-ant-1.10.7\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Users\Nohanderlin\AppData\Local\atom\bin;C:\Users\Nohanderlin\AppData\Local\Microsoft\WindowsApps;C:\Users\Nohanderlin\AppData\Roaming\npm;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.9+7-LTS, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_videogame, java.class.version=55.0}
+[DEBUG] 2021-02-22 04:36:18.546 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2021-02-22 04:36:18.546 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2021-02-22 04:36:18.547 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2021-02-22 04:36:18.547 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2b7e8044] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@53aa38be]
+[DEBUG] 2021-02-22 04:36:18.601 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.User] is safe
+[DEBUG] 2021-02-22 04:36:18.601 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.User
+[DEBUG] 2021-02-22 04:36:18.619 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.User] is safe
+[DEBUG] 2021-02-22 04:36:18.619 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.User
+[DEBUG] 2021-02-22 04:36:18.839 [main] AbstractEntityPersister - Static SQL for entity: entity.User
+[DEBUG] 2021-02-22 04:36:18.840 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2021-02-22 04:36:18.840 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.admin as admin2_0_, user_.email as email3_0_, user_.password as password4_0_, user_.user_name as user_nam5_0_ from user user_ where user_.id=?
+[DEBUG] 2021-02-22 04:36:18.840 [main] AbstractEntityPersister -  Insert 0: insert into user (admin, email, password, user_name, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2021-02-22 04:36:18.840 [main] AbstractEntityPersister -  Update 0: update user set admin=?, email=?, password=?, user_name=? where id=?
+[DEBUG] 2021-02-22 04:36:18.840 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2021-02-22 04:36:18.840 [main] AbstractEntityPersister -  Identity insert: insert into user (admin, email, password, user_name) values (?, ?, ?, ?)
+[DEBUG] 2021-02-22 04:36:18.862 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@245cb8df]
+[DEBUG] 2021-02-22 04:36:18.863 [main] MetamodelGraphWalker - Visiting attribute path : admin
+[DEBUG] 2021-02-22 04:36:18.863 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2021-02-22 04:36:18.863 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-02-22 04:36:18.863 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2021-02-22 04:36:18.863 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-22 04:36:18.875 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-22 04:36:18.878 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.User)
+    - Returns
+       - EntityReturnImpl(entity=entity.User, querySpaceUid=<gen:0>, path=entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2021-02-22 04:36:18.885 [main] EntityLoader - Static select for entity entity.User [NONE]: select user0_.id as id1_0_0_, user0_.admin as admin2_0_0_, user0_.email as email3_0_0_, user0_.password as password4_0_0_, user0_.user_name as user_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-02-22 04:36:18.885 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56a05324]
+[DEBUG] 2021-02-22 04:36:18.885 [main] MetamodelGraphWalker - Visiting attribute path : admin
+[DEBUG] 2021-02-22 04:36:18.885 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2021-02-22 04:36:18.885 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-02-22 04:36:18.885 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2021-02-22 04:36:18.885 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-22 04:36:18.886 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-22 04:36:18.886 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.User)
+    - Returns
+       - EntityReturnImpl(entity=entity.User, querySpaceUid=<gen:0>, path=entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2021-02-22 04:36:18.886 [main] EntityLoader - Static select for entity entity.User [READ]: select user0_.id as id1_0_0_, user0_.admin as admin2_0_0_, user0_.email as email3_0_0_, user0_.password as password4_0_0_, user0_.user_name as user_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-02-22 04:36:18.898 [main] Loader - Static select for action ACTION_MERGE on entity entity.User: select user0_.id as id1_0_0_, user0_.admin as admin2_0_0_, user0_.email as email3_0_0_, user0_.password as password4_0_0_, user0_.user_name as user_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-02-22 04:36:18.899 [main] Loader - Static select for action ACTION_REFRESH on entity entity.User: select user0_.id as id1_0_0_, user0_.admin as admin2_0_0_, user0_.email as email3_0_0_, user0_.password as password4_0_0_, user0_.user_name as user_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-02-22 04:36:18.925 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2021-02-22 04:36:18.925 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2021-02-22 04:36:18.925 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2021-02-22 04:36:18.931 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-02-22 04:36:18.931 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2021-02-22 04:36:18.932 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2021-02-22 04:36:18.932 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2021-02-22 04:36:18.934 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@388be5fd
+[DEBUG] 2021-02-22 04:36:18.936 [main] SessionFactoryRegistry - Registering SessionFactory: b101b296-190a-475c-85a3-5c90a621ceb8 (<unnamed>)
+[DEBUG] 2021-02-22 04:36:18.936 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2021-02-22 04:36:19.005 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2021-02-22 04:36:19.036 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2021-02-22 04:36:19.052 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@650a1aff
+[DEBUG] 2021-02-22 04:36:19.082 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from entity.User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2021-02-22 04:36:19.088 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.095 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[LIKE] Node: 'like'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'userName'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2021-02-22 04:36:19.120 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.136 [main] FromElement - FromClause{level=1} : entity.User (generatedAlias0) -> user0_
+[DEBUG] 2021-02-22 04:36:19.136 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-02-22 04:36:19.140 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-02-22 04:36:19.141 [main] DotNode - getDataType() : userName -> org.hibernate.type.StringType@68880c21
+[DEBUG] 2021-02-22 04:36:19.142 [main] FromReferenceNode - Resolved : generatedAlias0.userName -> user0_.user_name
+[DEBUG] 2021-02-22 04:36:19.144 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.144 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) ( where ( like ( user0_.user_name user0_.id userName ) ? ) ) )
+[DEBUG] 2021-02-22 04:36:19.152 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2021-02-22 04:36:19.152 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.153 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[LIKE] BinaryLogicOperatorNode: 'like'
+          +-[DOT] DotNode: 'user0_.user_name' {propertyName=userName,dereferenceType=PRIMITIVE,getPropertyPath=userName,path=generatedAlias0.userName,tableAlias=user0_,className=entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'userName' {originalText=userName}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@68880c21}
+
+[DEBUG] 2021-02-22 04:36:19.153 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.158 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from entity.User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2021-02-22 04:36:19.158 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_ where user0_.user_name like ?
+[DEBUG] 2021-02-22 04:36:19.158 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.175 [main] SQL - select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_ where user0_.user_name like ?
+[DEBUG] 2021-02-22 04:36:19.196 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-22 04:36:19.198 [main] Loader - Result row: EntityKey[entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.206 [main] Loader - Result set row: 1
+[DEBUG] 2021-02-22 04:36:19.206 [main] Loader - Result row: EntityKey[entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.207 [main] TwoPhaseLoad - Resolving attributes for [entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.208 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.208 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.208 [main] TwoPhaseLoad - Processing attribute `email` : value = nthornberry@nickelodeon.com
+[DEBUG] 2021-02-22 04:36:19.208 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.208 [main] TwoPhaseLoad - Processing attribute `password` : value = Password456
+[DEBUG] 2021-02-22 04:36:19.208 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.208 [main] TwoPhaseLoad - Processing attribute `userName` : value = NigelThornberry
+[DEBUG] 2021-02-22 04:36:19.208 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Done materializing entity [entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Resolving attributes for [entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Processing attribute `admin` : value = 1
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Processing attribute `email` : value = naguilera@madisoncollege.edu
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Processing attribute `password` : value = Password123
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Processing attribute `userName` : value = NoahAguilera
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.209 [main] TwoPhaseLoad - Done materializing entity [entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.211 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.266 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-02-22 04:36:19.266 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from entity.User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-02-22 04:36:19.267 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.267 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'userName'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2021-02-22 04:36:19.267 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.267 [main] FromElement - FromClause{level=1} : entity.User (generatedAlias0) -> user0_
+[DEBUG] 2021-02-22 04:36:19.267 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-02-22 04:36:19.268 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-02-22 04:36:19.268 [main] DotNode - getDataType() : userName -> org.hibernate.type.StringType@68880c21
+[DEBUG] 2021-02-22 04:36:19.268 [main] FromReferenceNode - Resolved : generatedAlias0.userName -> user0_.user_name
+[DEBUG] 2021-02-22 04:36:19.268 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.268 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) ( where ( = ( user0_.user_name user0_.id userName ) ? ) ) )
+[DEBUG] 2021-02-22 04:36:19.268 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2021-02-22 04:36:19.268 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.269 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'user0_.user_name' {propertyName=userName,dereferenceType=PRIMITIVE,getPropertyPath=userName,path=generatedAlias0.userName,tableAlias=user0_,className=entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'userName' {originalText=userName}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@68880c21}
+
+[DEBUG] 2021-02-22 04:36:19.269 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.269 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from entity.User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-02-22 04:36:19.269 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_ where user0_.user_name=?
+[DEBUG] 2021-02-22 04:36:19.269 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.269 [main] SQL - select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_ where user0_.user_name=?
+[DEBUG] 2021-02-22 04:36:19.271 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-22 04:36:19.272 [main] Loader - Result row: EntityKey[entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Resolving attributes for [entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Processing attribute `email` : value = bgates@microsoft.com
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Processing attribute `password` : value = money123
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Processing attribute `userName` : value = BillGates
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.272 [main] TwoPhaseLoad - Done materializing entity [entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.272 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.275 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-22 04:36:19.275 [main] TransactionImpl - begin
+[DEBUG] 2021-02-22 04:36:19.289 [main] TransactionImpl - committing
+[DEBUG] 2021-02-22 04:36:19.290 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-22 04:36:19.290 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-22 04:36:19.292 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-02-22 04:36:19.292 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-22 04:36:19.293 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-22 04:36:19.294 [main] EntityPrinter - entity.User{password=money123, admin=0, id=4, userName=BillGates, email=bgates@microsoft.com}
+[DEBUG] 2021-02-22 04:36:19.300 [main] SQL - delete from user where id=?
+[DEBUG] 2021-02-22 04:36:19.310 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.312 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.312 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-02-22 04:36:19.312 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-02-22 04:36:19.313 [main] SQL - select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_ where user0_.user_name=?
+[DEBUG] 2021-02-22 04:36:19.315 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.362 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-22 04:36:19.362 [main] TransactionImpl - begin
+[DEBUG] 2021-02-22 04:36:19.376 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-22 04:36:19.379 [main] SQL - insert into user (admin, email, password, user_name) values (?, ?, ?, ?)
+[DEBUG] 2021-02-22 04:36:19.388 [main] IdentifierGeneratorHelper - Natively generated identity: 22
+[DEBUG] 2021-02-22 04:36:19.388 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-22 04:36:19.390 [main] TransactionImpl - committing
+[DEBUG] 2021-02-22 04:36:19.390 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-22 04:36:19.390 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-22 04:36:19.390 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-22 04:36:19.390 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-22 04:36:19.390 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-22 04:36:19.390 [main] EntityPrinter - entity.User{password=science, admin=0, id=22, userName=BillNye, email=bnye@scienceguy.com}
+[DEBUG] 2021-02-22 04:36:19.394 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.395 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.395 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2021-02-22 04:36:19.395 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from entity.User as generatedAlias0
+[DEBUG] 2021-02-22 04:36:19.396 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.396 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'User'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2021-02-22 04:36:19.396 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.396 [main] FromElement - FromClause{level=1} : entity.User (generatedAlias0) -> user0_
+[DEBUG] 2021-02-22 04:36:19.396 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-02-22 04:36:19.396 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.396 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) )
+[DEBUG] 2021-02-22 04:36:19.396 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2021-02-22 04:36:19.396 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.397 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=entity.User}}
+
+[DEBUG] 2021-02-22 04:36:19.397 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.397 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from entity.User as generatedAlias0
+[DEBUG] 2021-02-22 04:36:19.397 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_
+[DEBUG] 2021-02-22 04:36:19.397 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.397 [main] SQL - select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_
+[DEBUG] 2021-02-22 04:36:19.399 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result row: EntityKey[entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result set row: 1
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result row: EntityKey[entity.User#2]
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result set row: 2
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result row: EntityKey[entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result set row: 3
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result row: EntityKey[entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result set row: 4
+[DEBUG] 2021-02-22 04:36:19.400 [main] Loader - Result row: EntityKey[entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.401 [main] Loader - Result set row: 5
+[DEBUG] 2021-02-22 04:36:19.401 [main] Loader - Result row: EntityKey[entity.User#22]
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Resolving attributes for [entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Processing attribute `admin` : value = 1
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Processing attribute `email` : value = naguilera@madisoncollege.edu
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Processing attribute `password` : value = Password123
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Processing attribute `userName` : value = NoahAguilera
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Done materializing entity [entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Resolving attributes for [entity.User#2]
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Processing attribute `email` : value = mmartian@mars.com
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Processing attribute `password` : value = loonytunes123
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Processing attribute `userName` : value = MarvinMartian
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.401 [main] TwoPhaseLoad - Done materializing entity [entity.User#2]
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Resolving attributes for [entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `email` : value = nthornberry@nickelodeon.com
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `password` : value = Password456
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `userName` : value = NigelThornberry
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Done materializing entity [entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Resolving attributes for [entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `email` : value = bgates@microsoft.com
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `password` : value = money123
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `userName` : value = BillGates
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Done materializing entity [entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Resolving attributes for [entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `email` : value = emusk@tesla.com
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `password` : value = tesla123
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `userName` : value = ElonMusk
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Done materializing entity [entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Resolving attributes for [entity.User#22]
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.402 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.403 [main] TwoPhaseLoad - Processing attribute `email` : value = bnye@scienceguy.com
+[DEBUG] 2021-02-22 04:36:19.403 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.403 [main] TwoPhaseLoad - Processing attribute `password` : value = science
+[DEBUG] 2021-02-22 04:36:19.403 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.403 [main] TwoPhaseLoad - Processing attribute `userName` : value = BillNye
+[DEBUG] 2021-02-22 04:36:19.403 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.403 [main] TwoPhaseLoad - Done materializing entity [entity.User#22]
+[DEBUG] 2021-02-22 04:36:19.403 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.462 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-02-22 04:36:19.462 [main] SQL - select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_ where user0_.user_name=?
+[DEBUG] 2021-02-22 04:36:19.465 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-22 04:36:19.466 [main] Loader - Result row: EntityKey[entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Resolving attributes for [entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Processing attribute `email` : value = emusk@tesla.com
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Processing attribute `password` : value = tesla123
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Processing attribute `userName` : value = ElonMusk
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.466 [main] TwoPhaseLoad - Done materializing entity [entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.466 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.468 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-22 04:36:19.468 [main] TransactionImpl - begin
+[DEBUG] 2021-02-22 04:36:19.470 [main] TransactionImpl - committing
+[DEBUG] 2021-02-22 04:36:19.470 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-22 04:36:19.471 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-22 04:36:19.471 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-22 04:36:19.471 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-22 04:36:19.471 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-22 04:36:19.471 [main] EntityPrinter - entity.User{password=TeslaRules, admin=0, id=5, userName=ElonMusk, email=emusk@tesla.com}
+[DEBUG] 2021-02-22 04:36:19.472 [main] SQL - update user set admin=?, email=?, password=?, user_name=? where id=?
+[DEBUG] 2021-02-22 04:36:19.478 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.480 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.481 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.password=:param0
+[DEBUG] 2021-02-22 04:36:19.481 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from entity.User as generatedAlias0 where generatedAlias0.password=:param0
+[DEBUG] 2021-02-22 04:36:19.484 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.486 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'password'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2021-02-22 04:36:19.487 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.488 [main] FromElement - FromClause{level=1} : entity.User (generatedAlias0) -> user0_
+[DEBUG] 2021-02-22 04:36:19.488 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-02-22 04:36:19.488 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-02-22 04:36:19.488 [main] DotNode - getDataType() : password -> org.hibernate.type.StringType@68880c21
+[DEBUG] 2021-02-22 04:36:19.490 [main] FromReferenceNode - Resolved : generatedAlias0.password -> user0_.password
+[DEBUG] 2021-02-22 04:36:19.490 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.491 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) ( where ( = ( user0_.password user0_.id password ) ? ) ) )
+[DEBUG] 2021-02-22 04:36:19.491 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2021-02-22 04:36:19.491 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-02-22 04:36:19.491 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'user0_.password' {propertyName=password,dereferenceType=PRIMITIVE,getPropertyPath=password,path=generatedAlias0.password,tableAlias=user0_,className=entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'password' {originalText=password}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@68880c21}
+
+[DEBUG] 2021-02-22 04:36:19.491 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.491 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from entity.User as generatedAlias0 where generatedAlias0.password=:param0
+[DEBUG] 2021-02-22 04:36:19.492 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_ where user0_.password=?
+[DEBUG] 2021-02-22 04:36:19.492 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-22 04:36:19.492 [main] SQL - select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_ where user0_.password=?
+[DEBUG] 2021-02-22 04:36:19.495 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-22 04:36:19.496 [main] Loader - Result row: EntityKey[entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Resolving attributes for [entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Processing attribute `email` : value = emusk@tesla.com
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Processing attribute `password` : value = TeslaRules
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Processing attribute `userName` : value = ElonMusk
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.496 [main] TwoPhaseLoad - Done materializing entity [entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.496 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.533 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2021-02-22 04:36:19.533 [main] SQL - select user0_.id as id1_0_, user0_.admin as admin2_0_, user0_.email as email3_0_, user0_.password as password4_0_, user0_.user_name as user_nam5_0_ from user user0_
+[DEBUG] 2021-02-22 04:36:19.535 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-22 04:36:19.535 [main] Loader - Result row: EntityKey[entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.536 [main] Loader - Result set row: 1
+[DEBUG] 2021-02-22 04:36:19.536 [main] Loader - Result row: EntityKey[entity.User#2]
+[DEBUG] 2021-02-22 04:36:19.536 [main] Loader - Result set row: 2
+[DEBUG] 2021-02-22 04:36:19.536 [main] Loader - Result row: EntityKey[entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.536 [main] Loader - Result set row: 3
+[DEBUG] 2021-02-22 04:36:19.536 [main] Loader - Result row: EntityKey[entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.536 [main] Loader - Result set row: 4
+[DEBUG] 2021-02-22 04:36:19.536 [main] Loader - Result row: EntityKey[entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Resolving attributes for [entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `admin` : value = 1
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `email` : value = naguilera@madisoncollege.edu
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `password` : value = Password123
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `userName` : value = NoahAguilera
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Done materializing entity [entity.User#1]
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Resolving attributes for [entity.User#2]
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `email` : value = mmartian@mars.com
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `password` : value = loonytunes123
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `userName` : value = MarvinMartian
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Done materializing entity [entity.User#2]
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Resolving attributes for [entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `email` : value = nthornberry@nickelodeon.com
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `password` : value = Password456
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `userName` : value = NigelThornberry
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Done materializing entity [entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Resolving attributes for [entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Processing attribute `email` : value = bgates@microsoft.com
+[DEBUG] 2021-02-22 04:36:19.537 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Processing attribute `password` : value = money123
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Processing attribute `userName` : value = BillGates
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Done materializing entity [entity.User#4]
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Resolving attributes for [entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Processing attribute `email` : value = emusk@tesla.com
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Processing attribute `password` : value = tesla123
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Processing attribute `userName` : value = ElonMusk
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.538 [main] TwoPhaseLoad - Done materializing entity [entity.User#5]
+[DEBUG] 2021-02-22 04:36:19.538 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-22 04:36:19.594 [main] SQL - select user0_.id as id1_0_0_, user0_.admin as admin2_0_0_, user0_.email as email3_0_0_, user0_.password as password4_0_0_, user0_.user_name as user_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-02-22 04:36:19.611 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-22 04:36:19.612 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Resolving attributes for [entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Processing attribute `admin` : value = 0
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Attribute (`admin`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Processing attribute `email` : value = nthornberry@nickelodeon.com
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Processing attribute `password` : value = Password456
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Processing attribute `userName` : value = NigelThornberry
+[DEBUG] 2021-02-22 04:36:19.613 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-22 04:36:19.614 [main] TwoPhaseLoad - Done materializing entity [entity.User#3]
+[DEBUG] 2021-02-22 04:36:19.614 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-22 04:36:19.614 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.User#3
+[DEBUG] 2021-02-22 04:36:19.614 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
