@@ -12,8 +12,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 /**
- * A simple servlet to welcome the user.
- * @author pwaite
+ * A servlet that searches through the database based on the username entered.
  */
 
 @WebServlet(

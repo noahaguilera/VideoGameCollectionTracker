@@ -13,8 +13,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * A simple servlet to welcome the user.
- * @author pwaite
+ * A servlet that updates the user's password.
  */
 
 @WebServlet(

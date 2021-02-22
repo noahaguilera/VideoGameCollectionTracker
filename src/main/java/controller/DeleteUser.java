@@ -12,7 +12,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 /**
- * A simple servlet to welcome the user.
+ * A servlet that deletes a user from the database.
  * @author pwaite
  */
 

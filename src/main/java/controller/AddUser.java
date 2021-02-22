@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.lang.*;
 
 /**
- * A simple servlet to welcome the user.
+ * A servlet that adds a user to the database.
  * @author pwaite
  */
 
