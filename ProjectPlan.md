@@ -1,20 +1,20 @@
 # Project Plan
 
-### Week 2
+### Week 2 COMPLETED
 - [ ] Create project repository on GitHub
 - [ ] Create project structure in intellij and push
 - [ ] Add link to list of indie projects in student repo.
 - [ ] Determine possible Web Services or APIs to use
 - [ ] Weekly journal entry
 
-### Week 3
+### Week 3 COMPLETED
 - [ ] Complete Problem Statement
 - [ ] Weekly journal entry
 - [ ] Write project plan
 - [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design.
 - [ ] Triple-check for Checkpoint 1
 
-### Week 4
+### Week 4 COMPLETED
 #### This week's focus is starting the User Sign Up
 - [ ] List technologies, versions and how they will be used
 - [ ] Create the database
