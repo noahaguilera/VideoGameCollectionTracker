@@ -8,3 +8,6 @@
 | 2/8/21| Completed User Stories| 1 | |
 | 2/9/21| Completed Project Plan| 2 | |
 | 2/9/21| Completed Problem Statement| 1 | |
+| 2/14/21| Set up classes and jsp pages for project, integrated hibernate| 3 | |
+| 2/15/21| Set up working CRUD for the project| 5 | |
+| 2/21/21| Set up test statements for the dao, completed week 4 work| 1 | |
