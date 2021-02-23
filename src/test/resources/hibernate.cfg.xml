@@ -19,5 +19,7 @@
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
         <mapping class="entity.User"/>
+        <mapping class="entity.GameList"/>
+        <mapping class="entity.UserGameList"/>
     </session-factory>
 </hibernate-configuration>
