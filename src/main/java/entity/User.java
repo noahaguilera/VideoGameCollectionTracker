@@ -3,6 +3,8 @@ package entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A class to represent a user.
@@ -30,6 +32,9 @@ public class User {
     private int admin;
 
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<UserGameList> userGameList = new HashSet<>();
+
     /**
      * Instantiates a new User.
      */
@@ -40,10 +45,10 @@ public class User {
      * Instantiates a new User.
      *
      * @param userName the user name
-     * @param email  the email
-     * @param password  the password
-     * @param id        the id
-     * @param admin     the admin status
+     * @param email    the email
+     * @param password the password
+     * @param id       the id
+     * @param admin    the admin status
      */
     public User(String userName, String email, String password, int id, int admin) {
         this.userName = userName;
@@ -145,8 +150,23 @@ public class User {
     }
 
 
+    /**
+     * Gets user game list.
+     *
+     * @return the user game list
+     */
+    public Set<UserGameList> getUserGameList() {
+        return userGameList;
+    }
 
-
+    /**
+     * Sets user game list.
+     *
+     *  userGameList the user game list
+     */
+    public void setUserGameList(Set<UserGameList> userGameList) {
+        this.userGameList = userGameList;
+    }
 
     @Override
     public String toString() {
