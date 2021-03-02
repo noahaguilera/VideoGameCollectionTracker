@@ -3,7 +3,6 @@ package test.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -30,6 +29,7 @@ public class Database {
 
     private Connection connection;
 
+
     // private constructor prevents instantiating this class anywhere else
     private Database() {
         loadProperties();
@@ -41,11 +41,9 @@ public class Database {
         try {
             properties.load (this.getClass().getResourceAsStream("/database.properties"));
         } catch (IOException ioe) {
-            System.out.println("Database.loadProperties()...Cannot load the properties file");
-            ioe.printStackTrace();
+            logger.error("Database.loadProperties()...Cannot load the properties file", ioe);
         } catch (Exception e) {
-            System.out.println("Database.loadProperties()..." + e);
-            e.printStackTrace();
+            logger.error("Database.loadProperties()..." , e);
         }
 
     }
@@ -78,7 +76,7 @@ public class Database {
             try {
                 connection.close();
             } catch (SQLException e) {
-                System.out.println("Cannot close connection" + e);
+                logger.error("Cannot close connection", e);
             }
         }
 

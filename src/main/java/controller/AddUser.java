@@ -34,7 +34,6 @@ public class AddUser extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher("/added.jsp");
             dispatcher.forward(req, resp);
         } catch (Exception e) {
-            System.err.println("User already has that name");
             RequestDispatcher dispatcher = req.getRequestDispatcher("/signup.jsp");
             dispatcher.forward(req, resp);
         }
