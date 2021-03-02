@@ -33,6 +33,9 @@ public class GameList {
     @Column(name = "game_cover")
     private String cover;
 
+    @Column(name = "release_date")
+    private String release_date;
+
     @OneToMany(mappedBy = "gameList", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<UserGameList> userGameList = new HashSet<>();
 
@@ -52,13 +55,14 @@ public class GameList {
      * @param description the description
      * @param cover       the cover
      */
-    public GameList(int id, String title, String platform, String rating, String description, String cover) {
+    public GameList(int id, String title, String platform, String rating, String description, String cover, String release_date) {
         this.id = id;
         this.title = title;
         this.platform = platform;
         this.rating = rating;
         this.description = description;
         this.cover = cover;
+        this.release_date = release_date;
     }
 
     /**
@@ -170,6 +174,24 @@ public class GameList {
     }
 
     /**
+     * Gets release_date.
+     *
+     * @return the release_date
+     */
+    public String getRelease_date() {
+        return release_date;
+    }
+
+    /**
+     * Sets release_date.
+     *
+     * @param release_date the release_date
+     */
+    public void setRelease_date(String release_date) {
+        this.release_date = release_date;
+    }
+
+    /**
      * Gets user game list.
      *
      * @return the user game list
@@ -196,6 +218,7 @@ public class GameList {
                 ", rating='" + rating + '\'' +
                 ", description='" + description + '\'' +
                 ", cover='" + cover + '\'' +
+                ", release_date='" + release_date + '\'' +
                 '}';
     }
 }
