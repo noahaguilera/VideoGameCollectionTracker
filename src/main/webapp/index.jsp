@@ -11,5 +11,7 @@
 <a href="signup.jsp">Sign Up</a>
 <br/>
 <a href="changePassword.jsp">Change Password</a>
+<br/>
+<a href="game.jsp">Games</a>
 </body>
 </html>
