@@ -87,7 +87,7 @@ public class UserGameListDao {
      * Get userGameList by property (exact match)
      * sample usage: getByPropertyEqual("lastname", "Curry")
      */
-    public List<UserGameList> getByPropertyEqual(String propertyName, String value) {
+    public List<UserGameList> getByPropertyEqual(String propertyName, int value) {
         Session session = sessionFactory.openSession();
 
         logger.debug("Searching for userGameList with " + propertyName + " = " + value);
@@ -102,25 +102,5 @@ public class UserGameListDao {
         return userGameLists;
     }
 
-    /**
-     * Get userGameList by property (like)
-     * sample usage: getByPropertyLike("lastname", "C")
-     */
-    public List<UserGameList> getByPropertyLike(String propertyName, String value) {
-        Session session = sessionFactory.openSession();
-
-        logger.debug("Searching for userGameList with {} = {}",  propertyName, value);
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<UserGameList> query = builder.createQuery( UserGameList.class );
-        Root<UserGameList> root = query.from( UserGameList.class );
-        Expression<String> propertyPath = root.get(propertyName);
-
-        query.where(builder.like(propertyPath, value + "%"));
-
-        List<UserGameList> userGameLists = session.createQuery( query ).getResultList();
-        session.close();
-        return userGameLists;
-    }
 
 }
