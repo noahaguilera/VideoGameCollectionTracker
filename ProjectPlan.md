@@ -28,7 +28,7 @@
 - [ ] test round trip (front end to back end)
 - [ ] Weekly journal entry
 
-### Week 5
+### Week 5 COMPLETED
 #### This week's focus is finishing the User Sign Up and login and Start on Adding games
 - [ ] Weekly journal entry
 - [ ] Finish up user signup/login
