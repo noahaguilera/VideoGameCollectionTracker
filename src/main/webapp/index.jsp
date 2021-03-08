@@ -13,5 +13,7 @@
 <a href="changePassword.jsp">Change Password</a>
 <br/>
 <a href="game.jsp">Games</a>
+<br/>
+<a href="usergame.jsp">Your Games</a>
 </body>
 </html>
