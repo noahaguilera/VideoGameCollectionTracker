@@ -25,7 +25,16 @@
                 <td>${gameList.description}</td>
                 <td>${gameList.release_date}</td>
                 <td>
-                    <form action="deleteUser" method="POST">
+                    <form action="formFill" method="POST">
+                        <label>
+                            <input type="submit" class="pencil" name="pencil" value=${gameList.id} />
+                            <img src="images/pencil.png" class="pencilimg">
+                        </label>
+
+                    </form>
+                </td>
+                <td>
+                    <form action="deleteGame" method="POST">
                         <label>
                             <input type="submit" class="trashcan" name="trashcan" value=${gameList.id} />
                             <img src="images/trash.png" class="trashcanimg">
