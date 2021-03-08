@@ -10,6 +10,5 @@
 <br/>
 <a href="addgame.jsp">Add Game</a>
 <br/>
-<a href="editgame.jsp">Edit Password</a>
 </body>
 </html>
