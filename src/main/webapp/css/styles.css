@@ -5,6 +5,15 @@
     height: 0;
 }
 
+input.pencil  {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+
 img {
     width: 20px;
     height: 20px;
