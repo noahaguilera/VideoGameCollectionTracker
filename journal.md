@@ -62,3 +62,13 @@ This week was not the best, I'm behind on the learning materials, but I'm going 
 * Watched week 5 videos and started on work
 
 This week I completed my week 4 work and plan on finishing my week 5 work before class tomorrow. I need to really get back on track because I don't enjoy being a week behind on everything scrambling to get it done. I think now that I've got a starting basis for my project having a working user CRUD will help make the rest of the work not look as daunting.
+
+### Week 6
+
+3/01/2021
+
+* Created gameList table
+* Created userGameList table
+* Set up many to many relationships between all the tables
+* Added unit testing to both tables
+* Set up AWS Account
