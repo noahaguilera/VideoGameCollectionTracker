@@ -34,12 +34,19 @@
                     </form>
                 </td>
                 <td>
+                    <form action="formFill" method="POST">
+                        <label>
+                            <input type="submit" class="add" name="add" value=${gameList.id} />
+                            <img src="images/add.png" class="addimg">
+                        </label>
+                    </form>
+                </td>
+                <td>
                     <form action="deleteGame" method="POST">
                         <label>
                             <input type="submit" class="trashcan" name="trashcan" value=${gameList.id} />
                             <img src="images/trash.png" class="trashcanimg">
                         </label>
-
                     </form>
                 </td>
             </tr>
