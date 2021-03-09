@@ -87,7 +87,7 @@ public class RoleDao {
      * Get roles by property (exact match)
      * sample usage: getByPropertyEqual("lastname", "Curry")
      */
-    public List<Role> getByPropertyEqual(String propertyName, int value) {
+    public List<Role> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
         logger.debug("Searching for roles with " + propertyName + " = " + value);
