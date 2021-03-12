@@ -13,3 +13,4 @@
 | 2/21/21| Set up test statements for the dao, completed week 4 work| 1 | |
 | 3/01/21| Created both gameList and userGameList many to many tables and added unit tests to each| 5 | |
 | 3/07/21| Finished implementing full crud on gameList table| 5 | |
+| 3/12/21| Completed CRUD on Many to Many table, Implementing authorization sign in| 4 | |
