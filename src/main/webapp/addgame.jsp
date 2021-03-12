@@ -7,10 +7,6 @@
     <input type="text" id="title" name="titleInput" placeholder="Title" value="">
     <br/>
     <br/>
-    <p>Game Platform:</p>
-    <input type="text" id="platform" name="platformInput" placeholder="ex Playstation" value="">
-    <br/>
-    <br/>
     <p>Age Rating:</p>
     <input type="text" id="rating" name="ratingInput" placeholder="ex E" value="">
     <br/>

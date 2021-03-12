@@ -11,10 +11,6 @@
     <input type="text" id="title" name="titleInput" placeholder="ex Minecraft" value="${gameList.title}">
     <br/>
     <br/>
-    <p>Game Platform:</p>
-    <input type="text" id="platform" name="platformInput" placeholder="ex Playstation" value="${gameList.platform}">
-    <br/>
-    <br/>
     <p>Age Rating:</p>
     <input type="text" id="rating" name="ratingInput" placeholder="ex E" value="${gameList.rating}">
     <br/>
