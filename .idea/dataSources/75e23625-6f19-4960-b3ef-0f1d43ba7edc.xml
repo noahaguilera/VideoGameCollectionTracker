@@ -937,69 +937,69 @@ SELECT|sys.sys_config
       <Position>2</Position>
       <DataType>varchar(225)|0s</DataType>
     </column>
-    <column id="294" parent="288" name="platform">
+    <column id="294" parent="288" name="age_rating">
       <Position>3</Position>
       <DataType>varchar(225)|0s</DataType>
     </column>
-    <column id="295" parent="288" name="age_rating">
+    <column id="295" parent="288" name="game_description">
       <Position>4</Position>
-      <DataType>varchar(225)|0s</DataType>
-    </column>
-    <column id="296" parent="288" name="game_description">
-      <Position>5</Position>
       <DataType>varchar(5000)|0s</DataType>
     </column>
-    <column id="297" parent="288" name="game_cover">
-      <Position>6</Position>
+    <column id="296" parent="288" name="game_cover">
+      <Position>5</Position>
       <DataType>varchar(1000)|0s</DataType>
     </column>
-    <column id="298" parent="288" name="release_date">
-      <Position>7</Position>
+    <column id="297" parent="288" name="release_date">
+      <Position>6</Position>
       <DataType>date|0s</DataType>
     </column>
-    <key id="299" parent="288" name="PRIMARY">
+    <key id="298" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="300" parent="289" name="id">
+    <column id="299" parent="289" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="301" parent="289" name="user_name">
+    <column id="300" parent="289" name="user_name">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
     </column>
-    <column id="302" parent="289" name="email">
+    <column id="301" parent="289" name="email">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="303" parent="289" name="password">
+    <column id="302" parent="289" name="password">
       <Position>4</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <key id="304" parent="289" name="PRIMARY">
+    <key id="303" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="305" parent="290" name="id">
+    <column id="304" parent="290" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="306" parent="290" name="user_id">
+    <column id="305" parent="290" name="user_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="307" parent="290" name="game_list_id">
+    <column id="306" parent="290" name="game_list_id">
       <Position>3</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
+    </column>
+    <column id="307" parent="290" name="platform">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
     </column>
     <index id="308" parent="290" name="user_game_list_user_id_fk">
       <ColNames>user_id</ColNames>
