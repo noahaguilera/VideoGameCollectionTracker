@@ -11,6 +11,7 @@
             <th>ID</th>
             <th>Username</th>
             <th>Game</th>
+            <th>Platform</th>
         </tr>
 
         <c:forEach items="${games}" var="userGameList">
@@ -18,22 +19,22 @@
                 <td>${userGameList.id}</td>
                 <td>${userGameList.user.userName}</td>
                 <td>${userGameList.gameList.title}</td>
+                <td>${userGameList.platform}</td>
                 <td>
                     <form action="formFill" method="POST">
                         <label>
-                            <input type="submit" class="pencil" name="pencil" value=${gameList.id} />
+                            <input type="submit" class="pencil2" name="pencil2" value=${userGameList.id} />
                             <img src="images/pencil.png" class="pencilimg">
                         </label>
 
                     </form>
                 </td>
                 <td>
-                    <form action="deleteGame" method="POST">
+                    <form action="deleteUserGame" method="POST">
                         <label>
-                            <input type="submit" class="trashcan" name="trashcan" value=${gameList.id} />
+                            <input type="submit" class="trashcan" name="trashcan" value=${userGameList.id} />
                             <img src="images/trash.png" class="trashcanimg">
                         </label>
-
                     </form>
                 </td>
             </tr>
