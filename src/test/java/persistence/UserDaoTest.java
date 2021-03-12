@@ -65,7 +65,7 @@ class UserDaoTest {
     @Test
     void insert() {
         dao = new UserDao();
-        User newUser = new User("BillNye", "bnye@scienceguy.com", "science",0,  0);
+        User newUser = new User("BillNye", "bnye@scienceguy.com", "science",0);
         dao.insert(newUser);
         List<User> users = dao.getAll();
         assertEquals(6, users.size());
