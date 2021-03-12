@@ -7,6 +7,8 @@
     <input type="submit" name="search" value="Search" />
 </form>
 <br/>
+<a href="game.jsp">Add Game to your collection</a>
 <br/>
+<a href="index.jsp">Home</a>
 </body>
 </html>
