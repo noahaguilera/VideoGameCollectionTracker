@@ -49,12 +49,12 @@ class GameListDaoTest {
         GameListDao gameListDao = new GameListDao();
         List<GameList> gameListUpdate = gameListDao.getByPropertyEqual("title", "Minecraft");
         GameList gameListUpdated = gameListUpdate.get(0);
-        gameListUpdated.setPlatform("PC");
+        gameListUpdated.setTitle("Minecraft 2");
         gameListDao.saveOrUpdate(gameListUpdated);
 
-        List<GameList> test_gameList = gameListDao.getByPropertyEqual("platform", "PC");
+        List<GameList> test_gameList = gameListDao.getByPropertyEqual("title", "Minecraft 2");
         GameList test_gameListUpdated = test_gameList.get(0);
-        assertEquals("Minecraft", test_gameListUpdated.getTitle());
+        assertEquals("Minecraft 2", test_gameListUpdated.getTitle());
     }
 
     /**
@@ -63,7 +63,7 @@ class GameListDaoTest {
     @Test
     void insert() {
         dao = new GameListDao();
-        GameList newGame = new GameList(0, "Halo 4", "Xbox 360", "M", "Halo 4 is a shooter game in which players predominantly experience gameplay from a first-person perspective; the game perspective switches to third-person when using certain weapons, abilities and vehicles.", "", "2012-11-06");
+        GameList newGame = new GameList(0, "Halo 4",  "M", "Halo 4 is a shooter game in which players predominantly experience gameplay from a first-person perspective; the game perspective switches to third-person when using certain weapons, abilities and vehicles.", "", "2012-11-06");
         dao.insert(newGame);
         List<GameList> games = dao.getAll();
         assertEquals(4, games.size());

@@ -66,7 +66,7 @@ class UserGameListDaoTest {
         dao = new UserGameListDao();
         GameListDao gameListDao = new GameListDao();
         UserDao userDao = new UserDao();
-        UserGameList userNewGame = new UserGameList(userDao.getById(2), gameListDao.getById(3));
+        UserGameList userNewGame = new UserGameList(userDao.getById(2), gameListDao.getById(3), "Playstation 5");
         dao.insert(userNewGame);
         List<UserGameList> usersGames = dao.getAll();
         assertEquals(7, usersGames.size());
