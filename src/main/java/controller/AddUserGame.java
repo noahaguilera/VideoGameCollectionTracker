@@ -32,10 +32,11 @@ public class AddUserGame extends HttpServlet {
         GameListDao gameListDao = new GameListDao();
         UserDao userDao = new UserDao();
         String userName = req.getParameter("userNameInput");
+        String platform = req.getParameter("platformInput");
         int gameId = Integer.parseInt(req.getParameter("idInput"));
         List<User> userUpdate = userDao.getByPropertyEqual("userName", userName);
         User userUpdated = userUpdate.get(0);
-        UserGameList newUserGame = new UserGameList(userUpdated, gameListDao.getById(gameId));
+        UserGameList newUserGame = new UserGameList(userUpdated, gameListDao.getById(gameId), platform);
         try {
             req.setAttribute("games", userGameListDao.insert(newUserGame));
             RequestDispatcher dispatcher = req.getRequestDispatcher("/usergame.jsp");

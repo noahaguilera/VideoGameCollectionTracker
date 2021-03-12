@@ -24,14 +24,12 @@ public class EditGame extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GameListDao gameListDao = new GameListDao();
         String title = req.getParameter("titleInput");
-        String platform = req.getParameter("platformInput");
         String rating = req.getParameter("ratingInput");
         String description = req.getParameter("descriptionInput");
         String release_date = req.getParameter("releaseDateInput");
         int gameId = Integer.parseInt(req.getParameter("idInput"));
         GameList gameUpdated = gameListDao.getById(gameId);
         gameUpdated.setTitle(title);
-        gameUpdated.setPlatform(platform);
         gameUpdated.setRating(rating);
         gameUpdated.setDescription(description);
         gameUpdated.setRelease_date(release_date);

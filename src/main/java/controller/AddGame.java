@@ -28,11 +28,10 @@ public class AddGame extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GameListDao gameListDao = new GameListDao();
         String title = req.getParameter("titleInput");
-        String platform = req.getParameter("platformInput");
         String rating = req.getParameter("ratingInput");
         String description = req.getParameter("descriptionInput");
         String date = req.getParameter("releaseDateInput");
-        GameList newGame = new GameList(0, title, platform, rating, description, "", date);
+        GameList newGame = new GameList(0, title, rating, description, "", date);
         try {
             req.setAttribute("games", gameListDao.insert(newGame));
             RequestDispatcher dispatcher = req.getRequestDispatcher("/game.jsp");

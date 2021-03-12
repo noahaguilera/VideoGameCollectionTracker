@@ -2,6 +2,7 @@ package controller;
 
 import entity.User;
 import persistence.GameListDao;
+import persistence.UserGameListDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -23,6 +24,7 @@ public class FormFill extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GameListDao gameListDao = new GameListDao();
+        UserGameListDao userGameListDao = new UserGameListDao();
         if (req.getParameter("pencil") != null) {
             int id = Integer.parseInt(req.getParameter("pencil"));
             req.setAttribute("games", gameListDao.getByPropertyEqual("id", "" + id + ""));
@@ -32,6 +34,11 @@ public class FormFill extends HttpServlet {
             int id = Integer.parseInt(req.getParameter("add"));
             req.setAttribute("games", gameListDao.getByPropertyEqual("id", "" + id + ""));
             RequestDispatcher dispatcher = req.getRequestDispatcher("/addMyGame.jsp");
+            dispatcher.forward(req, resp);
+        } else if (req.getParameter("pencil2") != null) {
+            int id = Integer.parseInt(req.getParameter("pencil2"));
+            req.setAttribute("games", userGameListDao.getByPropertyEqual("id", id));
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/editmygame.jsp");
             dispatcher.forward(req, resp);
         }
 

@@ -21,9 +21,6 @@ public class GameList {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "platform")
-    private String platform;
-
     @Column(name = "age_rating")
     private String rating;
 
@@ -50,15 +47,13 @@ public class GameList {
      *
      * @param id          the id
      * @param title       the title
-     * @param platform    the platform
      * @param rating      the rating
      * @param description the description
      * @param cover       the cover
      */
-    public GameList(int id, String title, String platform, String rating, String description, String cover, String release_date) {
+    public GameList(int id, String title, String rating, String description, String cover, String release_date) {
         this.id = id;
         this.title = title;
-        this.platform = platform;
         this.rating = rating;
         this.description = description;
         this.cover = cover;
@@ -99,24 +94,6 @@ public class GameList {
      */
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    /**
-     * Gets platform.
-     *
-     * @return the platform
-     */
-    public String getPlatform() {
-        return platform;
-    }
-
-    /**
-     * Sets platform.
-     *
-     * @param platform the platform
-     */
-    public void setPlatform(String platform) {
-        this.platform = platform;
     }
 
     /**
@@ -214,7 +191,6 @@ public class GameList {
         return "GameList{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", platform='" + platform + '\'' +
                 ", rating='" + rating + '\'' +
                 ", description='" + description + '\'' +
                 ", cover='" + cover + '\'' +

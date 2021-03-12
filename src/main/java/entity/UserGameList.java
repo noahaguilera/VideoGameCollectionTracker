@@ -24,6 +24,9 @@ public class UserGameList {
     @JoinColumn(name = "game_list_id")
     private GameList gameList;
 
+    @Column(name = "platform")
+    private String platform;
+
     /**
      * Instantiates a new User game list.
      */
@@ -35,10 +38,12 @@ public class UserGameList {
      *
      * @param user     the user
      * @param gameList the game list
+     * @param platform the platform
      */
-    public UserGameList(User user, GameList gameList) {
+    public UserGameList(User user, GameList gameList, String platform) {
         this.user = user;
         this.gameList = gameList;
+        this.platform = platform;
     }
 
     /**
@@ -95,12 +100,31 @@ public class UserGameList {
         this.gameList = gameList;
     }
 
+    /**
+     * Gets platform.
+     *
+     * @return the platform
+     */
+    public String getPlatform() {
+        return platform;
+    }
+
+    /**
+     * Sets platform.
+     *
+     * @param platform the platform
+     */
+    public void setPlatform(String platform) {
+        this.platform = platform;
+    }
+
     @Override
     public String toString() {
         return "UserGameList{" +
                 "id=" + id +
                 ", user=" + user +
                 ", gameList=" + gameList +
+                ", gameList=" + platform +
                 '}';
     }
 }
