@@ -40,7 +40,7 @@
 - [ ] gamelist table
 
 
-### Week 6
+### Week 6 COMPLETE
 #### This week's focus is creating the my games page with edit and delete options
 - [ ] Weekly journal entry
 - [ ] Create my games jsp
@@ -50,13 +50,13 @@
 - [ ] Add Edit game button that allows you to edit the game from your gamelist
 - [ ] Create edit game jsp page with options
 - [ ] Add Delete game button that removes game from your gamelist
-- [ ] Triple-check for Checkpoint 2
+- [ ] Triple-check for Checkpoint 2 
 
 ### Week 7
 #### This week's focus is creating the adding games manually
 - [ ] Weekly journal entry
-- [ ] Finish up anything not completed from my games page
-- [ ] Create add games manually jsp(Use the edit games jsp as a template)
+- [ ] Finish up anything not completed from my games page COMPLETE
+- [ ] Create add games manually jsp(Use the edit games jsp as a template) COMPLETE
 - [ ] Get upload image option working properly
 
 ### Week 8
