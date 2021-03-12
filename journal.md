@@ -72,3 +72,11 @@ This week I completed my week 4 work and plan on finishing my week 5 work before
 * Set up many to many relationships between all the tables
 * Added unit testing to both tables
 * Set up AWS Account
+
+### Week 8
+
+3/12/2021
+
+* Completed Many to Many CRUD
+* Completed week 5 work
+* Set up authorization with sign in
