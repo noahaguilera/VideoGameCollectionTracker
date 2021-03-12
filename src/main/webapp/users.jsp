@@ -12,7 +12,6 @@
             <th>User Name</th>
             <th>Email</th>
             <th>Password</th>
-            <th>Admin</th>
         </tr>
 
         <c:forEach items="${users}" var="user">
@@ -21,7 +20,6 @@
                 <td>${user.userName}</td>
                 <td>${user.email}</td>
                 <td>${user.password}</td>
-                <td>${user.admin}</td>
                 <td>
                     <form action="deleteUser" method="POST">
                         <label>
