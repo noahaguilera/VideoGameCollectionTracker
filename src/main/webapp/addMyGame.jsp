@@ -12,6 +12,10 @@
         <input type="text" id="userName" name="userNameInput" placeholder="User Name" value="">
         <br/>
         <br/>
+            <p>Platform:</p>
+            <input type="text" id="platform" name="platformInput" placeholder="Ex: Xbox One" value="">
+            <br/>
+            <br/>
         <input type="submit" name="addUserGame" value="Add Game" />
     </c:forEach>
 </form>
