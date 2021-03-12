@@ -10,7 +10,6 @@
         <tr>
             <th>ID</th>
             <th>Title</th>
-            <th>Platform</th>
             <th>Rating</th>
             <th>Description</th>
             <th>Release Date</th>
@@ -20,7 +19,6 @@
             <tr>
                 <td>${gameList.id}</td>
                 <td>${gameList.title}</td>
-                <td>${gameList.platform}</td>
                 <td>${gameList.rating}</td>
                 <td>${gameList.description}</td>
                 <td>${gameList.release_date}</td>
