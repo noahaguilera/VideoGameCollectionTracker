@@ -28,7 +28,7 @@ public class AddUser extends HttpServlet {
         String userName = req.getParameter("userNameInput");
         String email = req.getParameter("emailInput");
         String password = req.getParameter("passwordInput");
-        User newUser = new User(userName, email, password,0,  0);
+        User newUser = new User(userName, email, password,0);
         try {
             req.setAttribute("users", userDao.insert(newUser));
             RequestDispatcher dispatcher = req.getRequestDispatcher("/added.jsp");

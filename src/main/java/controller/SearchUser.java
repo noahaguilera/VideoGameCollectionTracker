@@ -31,7 +31,7 @@ public class SearchUser extends HttpServlet {
         } else if (req.getParameter("all") != null) {
             req.setAttribute("users", userDao.getAll());
         } else if (req.getParameter("signup") != null) {
-            User newUser = new User(userName, email, password,0,  0);
+            User newUser = new User(userName, email, password,0);
             req.setAttribute("users", userDao.insert(newUser));
         }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users.jsp");

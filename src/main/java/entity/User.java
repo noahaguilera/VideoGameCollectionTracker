@@ -28,9 +28,6 @@ public class User {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
-    @Column(name = "admin")
-    private int admin;
-
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<UserGameList> userGameList = new HashSet<>();
@@ -51,14 +48,12 @@ public class User {
      * @param email    the email
      * @param password the password
      * @param id       the id
-     * @param admin    the admin status
      */
-    public User(String userName, String email, String password, int id, int admin) {
+    public User(String userName, String email, String password, int id) {
         this.userName = userName;
         this.email = email;
         this.password = password;
         this.id = id;
-        this.admin = admin;
     }
 
 
@@ -135,25 +130,6 @@ public class User {
     }
 
     /**
-     * Gets admin.
-     *
-     * @return the admin status
-     */
-    public int getAdmin() {
-        return admin;
-    }
-
-    /**
-     * Sets admin.
-     *
-     * @param admin the admin status
-     */
-    public void setAdmin(int admin) {
-        this.admin = admin;
-    }
-
-
-    /**
      * Gets user game list.
      *
      * @return the user game list
@@ -178,7 +154,6 @@ public class User {
                 "userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", admin='" + admin +  '\'' +
                 '}';
     }
 
