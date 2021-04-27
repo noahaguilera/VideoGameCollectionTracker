@@ -8,6 +8,7 @@
 
     <table width="35%">
         <tr>
+            <th>Cover</th>
             <th>ID</th>
             <th>Title</th>
             <th>Rating</th>
@@ -17,6 +18,7 @@
 
         <c:forEach items="${games}" var="gameList">
             <tr>
+                <td><img id="cover" src="${gameList.cover}"></td>
                 <td>${gameList.id}</td>
                 <td>${gameList.title}</td>
                 <td>${gameList.rating}</td>

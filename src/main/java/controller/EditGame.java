@@ -27,12 +27,14 @@ public class EditGame extends HttpServlet {
         String rating = req.getParameter("ratingInput");
         String description = req.getParameter("descriptionInput");
         String release_date = req.getParameter("releaseDateInput");
+        String cover = req.getParameter("coverInput");
         int gameId = Integer.parseInt(req.getParameter("idInput"));
         GameList gameUpdated = gameListDao.getById(gameId);
         gameUpdated.setTitle(title);
         gameUpdated.setRating(rating);
         gameUpdated.setDescription(description);
         gameUpdated.setRelease_date(release_date);
+        gameUpdated.setCover(cover);
         gameListDao.saveOrUpdate(gameUpdated);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/game.jsp");
         dispatcher.forward(req, resp);

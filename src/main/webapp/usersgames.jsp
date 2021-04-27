@@ -9,7 +9,7 @@
     <table width="35%">
         <tr>
             <th>ID</th>
-            <th>Username</th>
+            <th>Cover</th>
             <th>Game</th>
             <th>Platform</th>
         </tr>
@@ -17,7 +17,7 @@
         <c:forEach items="${games}" var="userGameList">
             <tr>
                 <td>${userGameList.id}</td>
-                <td>${userGameList.user.userName}</td>
+                <td>${userGameList.gamelist.cover}</td>
                 <td>${userGameList.gameList.title}</td>
                 <td>${userGameList.platform}</td>
                 <td>

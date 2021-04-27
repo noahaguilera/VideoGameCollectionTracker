@@ -22,7 +22,10 @@
     <p>Release Date:</p>
     <input type="text" id="release_date" name="releaseDateInput" placeholder="2021-03-26" value="${gameList.release_date}">
     <br/>
+    <p>Game Cover URL:</p>
+    <input type="text" id="cover" name="coverInput" placeholder="something.jpg" value="${gameList.cover}">
     <br/>
+
     <input type="submit" name="editGame" value="Complete Edit" />
 </c:forEach>
 </form>

@@ -8,6 +8,7 @@ import persistence.UserGameListDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -29,7 +30,9 @@ public class SearchUserGame extends HttpServlet {
         GameListDao gameListDao = new GameListDao();
         UserDao userDao = new UserDao();
         UserGameListDao userGameListDao =new UserGameListDao();
-        String username = req.getParameter("usernameInput");
+        //String username = req.getParameter("usernameInput");
+        Cookie ck[]=req.getCookies();
+        String username=ck[1].getValue();
         if (req.getParameter("search") != null) {
             List<User> user = userDao.getByPropertyEqual("userName", username);
             if (user.isEmpty()) {

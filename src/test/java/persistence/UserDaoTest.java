@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import javax.servlet.RequestDispatcher;
 import java.util.List;
+import java.util.function.Supplier;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -98,5 +99,12 @@ class UserDaoTest {
         userDao.delete(delete_user);
         List<User> deleted_user = userDao.getByPropertyEqual("userName", "BillGates");
         assertEquals(true , deleted_user.isEmpty());
+    }
+
+    @Test
+    void getByPropertyEqual() {
+        UserDao userDao = new UserDao();
+        List<User> user_to_delete = userDao.getByPropertyEqual("userName", "NoahAguilera");
+        assertEquals("Password123", user_to_delete.get(0).getPassword());
     }
 }

@@ -22,9 +22,6 @@ class GameListDaoTest {
      */
     @BeforeEach
     void setUp() {
-
-
-
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
 

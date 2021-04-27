@@ -18,3 +18,8 @@ img {
     width: 20px;
     height: 20px;
 }
+
+#cover {
+    width: 150px;
+    height: auto;
+}
