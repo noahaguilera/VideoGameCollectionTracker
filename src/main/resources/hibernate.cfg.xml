@@ -9,7 +9,7 @@
 
 
         <property name="connection.username">root</property>
-        <property name="connection.password">School50232</property>
+        <property name="connection.password">uBUs4XoxU9UsEw</property>
 
 
         <property name="hibernate.c3p0.min_size">5</property>
@@ -22,5 +22,7 @@
         <mapping class="entity.GameList"/>
         <mapping class="entity.UserGameList"/>
         <mapping class="entity.Role"/>
+        <mapping class="LogoutServlet"/>
+        <mapping class="ProfileServlet"/>
     </session-factory>
 </hibernate-configuration>
