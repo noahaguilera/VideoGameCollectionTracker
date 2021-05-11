@@ -19,6 +19,9 @@ import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.lang.*;
 
+/**
+ * A class that allows the admin to add a game from the api
+ */
 @WebServlet(
         urlPatterns = {"/adminAddGame"}
 )
@@ -37,7 +40,23 @@ public class AdminAddGame extends HttpServlet {
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         Game game = mapper.readValue(response, Game.class);
-        GameList newGame = new GameList(0, game.getName(), game.getEsrbRating().getName(), game.getDescription(), game.getBackgroundImage(), game.getReleased());
+        String esrb;
+        String backgroundImage;
+        /**
+         * Checks if esrb or background image are null that it still inputs into the database
+         */
+        try {
+            esrb = game.getEsrbRating().getName();
+        } catch(NullPointerException e) {
+            esrb = "";
+        }
+
+        try {
+                backgroundImage = game.getBackgroundImage();
+        } catch(NullPointerException e) {
+            backgroundImage = "";
+        }
+        GameList newGame = new GameList(0, game.getName(), esrb, game.getDescription(), backgroundImage, game.getReleased());
         try {
             req.setAttribute("games", gameListDao.insert(newGame));
             RequestDispatcher dispatcher = req.getRequestDispatcher("/adminAddGame.jsp");

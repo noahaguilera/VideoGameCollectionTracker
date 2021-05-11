@@ -1,7 +1,5 @@
 package controller;
 
-import entity.UserGameList;
-import persistence.GameListDao;
 import persistence.UserGameListDao;
 
 import javax.servlet.RequestDispatcher;
@@ -11,11 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.util.List;
 
 /**
- * A servlet that deletes a user from the database.
- * @author pwaite
+ * A class that deletes the user's game from their gamelist
  */
 
 @WebServlet(

@@ -4,6 +4,17 @@
          version="3.1">
   <display-name>Video Game Collection Tracker</display-name>
 
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+
   <!-- Tell the server to use form-based authentication. -->
   <login-config>
     <auth-method>FORM</auth-method>
@@ -24,40 +35,202 @@
     </auth-constraint>
   </security-constraint>
 
+  <!-- Protect the home page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>home</web-resource-name>
+      <url-pattern>/home.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the game page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>game</web-resource-name>
+      <url-pattern>/game.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the games page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>games</web-resource-name>
+      <url-pattern>/games.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the added page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>added</web-resource-name>
+      <url-pattern>/added.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the add game page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>addgame</web-resource-name>
+      <url-pattern>/addgame.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the add my game page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>addMyGame</web-resource-name>
+      <url-pattern>/addMyGame.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the admin add game page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>adminAddGame</web-resource-name>
+      <url-pattern>/adminAddGame.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the admin center page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>admincenter</web-resource-name>
+      <url-pattern>/admincenter.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the change password page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>changePassword</web-resource-name>
+      <url-pattern>/changePassword.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the deleted page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>deleted</web-resource-name>
+      <url-pattern>/deleted.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the edit game page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>editgame</web-resource-name>
+      <url-pattern>/editgame.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the edit my game page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>editmygame</web-resource-name>
+      <url-pattern>/editmygame.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the profile page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>profile</web-resource-name>
+      <url-pattern>/profile.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the user game page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>usergame</web-resource-name>
+      <url-pattern>/usergame.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the users games page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>usersgames</web-resource-name>
+      <url-pattern>/usersgames.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the add my game page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>addMyGame</web-resource-name>
+      <url-pattern>/addMyGame.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
 
   <security-role>
     <role-name>Admin</role-name>
   </security-role>
+  <security-role>
+    <role-name>User</role-name>
+  </security-role>
 
-  <servlet>
-    <description></description>
-    <display-name>LoginServlet</display-name>
-    <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>LoginServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
-    <url-pattern>/LoginServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ProfileServlet</display-name>
-    <servlet-name>ProfileServlet</servlet-name>
-    <servlet-class>ProfileServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ProfileServlet</servlet-name>
-    <url-pattern>/ProfileServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>LogoutServlet</display-name>
-    <servlet-name>LogoutServlet</servlet-name>
-    <servlet-class>LogoutServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LogoutServlet</servlet-name>
-    <url-pattern>/LogoutServlet</url-pattern>
-  </servlet-mapping>
 
 </web-app>

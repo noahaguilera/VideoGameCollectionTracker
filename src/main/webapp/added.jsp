@@ -6,7 +6,7 @@
 <div class="container-fluid">
     <h2>Thank You for Signing Up</h2>
 
-    <a href="index.jsp">Home</a>
+    <a href="home.jsp">Sign In</a>
 </div>
 
 </body>

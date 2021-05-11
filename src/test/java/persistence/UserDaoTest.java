@@ -66,7 +66,7 @@ class UserDaoTest {
     @Test
     void insert() {
         dao = new UserDao();
-        User newUser = new User("BillNye", "bnye@scienceguy.com", "science",0);
+        User newUser = new User("BillNye", "bnye@scienceguy.com", "science",0, "");
         dao.insert(newUser);
         List<User> users = dao.getAll();
         assertEquals(6, users.size());
@@ -106,5 +106,8 @@ class UserDaoTest {
         UserDao userDao = new UserDao();
         List<User> user_to_delete = userDao.getByPropertyEqual("userName", "NoahAguilera");
         assertEquals("Password123", user_to_delete.get(0).getPassword());
+        List<User> test = userDao.getByPropertyEqual("userName", "FakeUser");
+        assertEquals(true, test.isEmpty());
+        //assertEquals("Password123", user_to_delete.get(0).getPassword());
     }
 }

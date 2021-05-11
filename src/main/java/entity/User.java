@@ -23,6 +23,9 @@ public class User {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "profile_picture")
+    private String profilePicture;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native",strategy = "native")
@@ -44,16 +47,18 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param userName the user name
-     * @param email    the email
-     * @param password the password
-     * @param id       the id
+     * @param userName       the user name
+     * @param email          the email
+     * @param password       the password
+     * @param id             the id
+     * @param profilePicture the profile picture
      */
-    public User(String userName, String email, String password, int id) {
+    public User(String userName, String email, String password, int id, String profilePicture) {
         this.userName = userName;
         this.email = email;
         this.password = password;
         this.id = id;
+        this.profilePicture = profilePicture;
     }
 
 
@@ -140,11 +145,31 @@ public class User {
 
     /**
      * Sets user game list.
+     * <p>
+     * userGameList the user game list
      *
-     *  userGameList the user game list
+     * @param userGameList the user game list
      */
     public void setUserGameList(Set<UserGameList> userGameList) {
         this.userGameList = userGameList;
+    }
+
+    /**
+     * Gets profile picture.
+     *
+     * @return the profile picture
+     */
+    public String getProfilePicture() {
+        return profilePicture;
+    }
+
+    /**
+     * Sets profile picture.
+     *
+     * @param profilePicture the profile picture
+     */
+    public void setProfilePicture(String profilePicture) {
+        this.profilePicture = profilePicture;
     }
 
     @Override
@@ -154,6 +179,7 @@ public class User {
                 "userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", password='" + profilePicture + '\'' +
                 '}';
     }
 

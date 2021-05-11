@@ -1,9 +1,7 @@
 package controller;
 
 import entity.GameList;
-import entity.User;
 import persistence.GameListDao;
-import persistence.UserDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,8 +13,7 @@ import java.io.IOException;
 import java.lang.*;
 
 /**
- * A servlet that adds a user to the database.
- * @author pwaite
+ * A class that adds a game to the database.
  */
 
 @WebServlet(
@@ -30,8 +27,9 @@ public class AddGame extends HttpServlet {
         String title = req.getParameter("titleInput");
         String rating = req.getParameter("ratingInput");
         String description = req.getParameter("descriptionInput");
+        String gameImg = req.getParameter("gameImgInput");
         String date = req.getParameter("releaseDateInput");
-        GameList newGame = new GameList(0, title, rating, description, "", date);
+        GameList newGame = new GameList(0, title, rating, description, gameImg, date);
         try {
             req.setAttribute("games", gameListDao.insert(newGame));
             RequestDispatcher dispatcher = req.getRequestDispatcher("/game.jsp");

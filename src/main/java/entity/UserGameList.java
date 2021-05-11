@@ -124,7 +124,7 @@ public class UserGameList {
                 "id=" + id +
                 ", user=" + user +
                 ", gameList=" + gameList +
-                ", gameList=" + platform +
+                ", platform=" + platform +
                 '}';
     }
 }

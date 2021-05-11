@@ -8,6 +8,6 @@
     <input type="submit" name="all" value="Show All Users" />
 </form>
 <br/>
-<a href="index.jsp">Home</a>
+<a href="home.jsp">Home</a>
 </body>
 </html>

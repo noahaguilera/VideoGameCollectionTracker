@@ -17,8 +17,7 @@ import java.lang.*;
 import java.util.List;
 
 /**
- * A servlet that adds a user to the database.
- * @author pwaite
+ * A class that adds a user's game to the database.
  */
 
 @WebServlet(
@@ -31,7 +30,7 @@ public class AddUserGame extends HttpServlet {
         UserGameListDao userGameListDao = new UserGameListDao();
         GameListDao gameListDao = new GameListDao();
         UserDao userDao = new UserDao();
-        String userName = req.getParameter("userNameInput");
+        String userName = req.getUserPrincipal().getName();
         String platform = req.getParameter("platformInput");
         int gameId = Integer.parseInt(req.getParameter("idInput"));
         List<User> userUpdate = userDao.getByPropertyEqual("userName", userName);

@@ -14,8 +14,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * A servlet that deletes a user from the database.
- * @author pwaite
+ * A class that deletes a game from the database
  */
 
 @WebServlet(

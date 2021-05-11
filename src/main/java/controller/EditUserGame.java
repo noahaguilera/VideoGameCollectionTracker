@@ -14,7 +14,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 /**
- * A servlet that allows you to edit a game.
+ * A servlet that allows you to edit a users game, so changing the platform.
  */
 
 @WebServlet(

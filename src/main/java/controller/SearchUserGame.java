@@ -14,10 +14,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
- * A servlet that searches through the database based on the username entered.
+ * A servlet that searches through the users game database based on their username.
  */
 
 @WebServlet(
@@ -27,16 +28,15 @@ import java.util.List;
 public class SearchUserGame extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        GameListDao gameListDao = new GameListDao();
+        resp.setContentType("text/html");
+        PrintWriter out=resp.getWriter();
         UserDao userDao = new UserDao();
         UserGameListDao userGameListDao =new UserGameListDao();
-        //String username = req.getParameter("usernameInput");
-        Cookie ck[]=req.getCookies();
-        String username=ck[1].getValue();
+        String userName = req.getUserPrincipal().getName();
         if (req.getParameter("search") != null) {
-            List<User> user = userDao.getByPropertyEqual("userName", username);
+            List<User> user = userDao.getByPropertyEqual("userName", userName);
             if (user.isEmpty()) {
-
+                out.print("User Not Found");
             } else {
                 User correctUser = user.get(0);
                 int userId = correctUser.getId();
@@ -50,4 +50,3 @@ public class SearchUserGame extends HttpServlet {
 
     }
 }
-
