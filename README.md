@@ -34,6 +34,7 @@ So my solution to the problem is to have a site that you can enter in all your g
 #### [TimeLog](timelog.md)
 
 #### [Website Link](http://18.219.146.1:8080/VideoGameCollectionTracker/)
+#### [Link to video demo](https://youtu.be/RwI8lbEJNNI)
 
 ### Refrences
 
