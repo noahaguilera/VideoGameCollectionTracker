@@ -80,3 +80,19 @@ This week I completed my week 4 work and plan on finishing my week 5 work before
 * Completed Many to Many CRUD
 * Completed week 5 work
 * Set up authorization with sign in
+
+
+#Week 15
+
+* Started getting alot of the css bootstrap working on my project
+* Created slideshow on homepage
+* Got the get username from session working and implemented on certain pages
+
+#Week 16
+
+* Implemented authorization on all pages
+* Created admin page
+* implemented rest of css on all of the pages
+* finally got it deployed up to aws
+* recorded video demo and added it to readme
+* touched up the project plan, journal, and timelog since I haven't touched them in a long time.
