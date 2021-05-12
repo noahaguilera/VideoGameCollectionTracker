@@ -10,8 +10,14 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Role dao test.
+ */
 class RoleDaoTest {
 
+    /**
+     * The Dao.
+     */
     RoleDao dao;
 
     /**
@@ -28,6 +34,9 @@ class RoleDaoTest {
         dao = new RoleDao();
     }
 
+    /**
+     * Gets by id.
+     */
     @Test
     void getById() {
         Role roles = dao.getById(3);
@@ -35,14 +44,23 @@ class RoleDaoTest {
         assertEquals("MarvinMartian", roles.getUser_name());
     }
 
+    /**
+     * Save or update.
+     */
     @Test
     void saveOrUpdate() {
     }
 
+    /**
+     * Insert.
+     */
     @Test
     void insert() {
     }
 
+    /**
+     * Delete.
+     */
     @Test
     void delete() {
         List<Role> roles = dao.getByPropertyEqual("user_name", "MarvinMartian");
@@ -54,12 +72,18 @@ class RoleDaoTest {
         assertEquals(3, total_roles.size());
     }
 
+    /**
+     * Gets all.
+     */
     @Test
     void getAll() {
         List<Role> roles = dao.getAll();
         assertEquals(4, roles.size());
     }
 
+    /**
+     * Gets by property equal.
+     */
     @Test
     void getByPropertyEqual() {
         List<Role> roles = dao.getByPropertyEqual("user_role", "User");
