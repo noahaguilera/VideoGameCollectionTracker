@@ -1,4 +1,4 @@
-<%@include file="head.jsp"%>
+<jsp:include page="head.jsp" />
 <html>
 <body>
 <h2>Add Game</h2>

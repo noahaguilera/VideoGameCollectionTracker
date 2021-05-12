@@ -1,4 +1,4 @@
-<%@include file="head.jsp"%>
+<jsp:include page="head.jsp" />
 <html>
 <meta charset="ISO-8859-1">
 <body>

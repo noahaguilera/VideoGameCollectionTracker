@@ -1,4 +1,4 @@
-<%@include file="head.jsp"%>
+<jsp:include page="head.jsp" />
 <html>
 <body id="page-top">
 <!-- Page Wrapper -->
